@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+  border: none;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #eee;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to right, #32c211, #1c7807);
+}
+
+.total-money {
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.product {
+  padding: 15px;
+  margin-bottom: 10px;
+  width: 33%;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.product img {
+  max-width: 150px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+button.add-to-cart {
+  border-radius: 6px;
+  padding: 10px;
+  background: linear-gradient(45deg, #36e063, #0ba133);
+  color: #fff;
+  font-weight: 500;
+  transition: .5;
+}
+
+.add-to-cart:hover {
+  background: #13c406;
+  cursor: pointer;
+}
+
+button.remove-cart {
+  border-radius: 6px;
+  padding: 10px;
+  background: linear-gradient(45deg, #d91150, #f70f58);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  transition: .5;
+}
+
+.remove-cart:hover {
+  background: #f50029;
+  cursor: pointer;
+}
+
+.basket-item {
+  text-align: center;
+  background: #13c406;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.total-price {
+  text-align: center;
+  background: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+button:disabled {
+  background: gray;
+}
+
+button:disabled:hover {
+  background: red;
+}
+
+.popup-content {
+  width: 600px !important;
+  top: 75% !important;
+  left: 35% !important;
+}
+
+.popup-overlay {
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+
+.show-bill {
+  width: 100%;
+  margin: 15px 0;
+  padding: 15px;
+  background: #1c7807;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+}
